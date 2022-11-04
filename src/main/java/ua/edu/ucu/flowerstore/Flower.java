@@ -10,4 +10,5 @@ public class Flower {
     private FlowerColor color;
     private double price;
     private double sepalLength;
+    public Flower() {}
 }

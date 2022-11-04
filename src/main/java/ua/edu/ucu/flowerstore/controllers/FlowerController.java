@@ -1,8 +1,11 @@
-package ua.edu.ucu.flowerstore;
+package ua.edu.ucu.flowerstore.controllers;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import ua.edu.ucu.flowerstore.Flower;
+import ua.edu.ucu.flowerstore.FlowerColor;
+
 import java.util.List;
 
 @RestController
