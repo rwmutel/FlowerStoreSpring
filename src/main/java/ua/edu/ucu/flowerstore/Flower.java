@@ -10,11 +10,4 @@ public class Flower {
     private FlowerColor color;
     private double price;
     private double sepalLength;
-
-    public Flower() { }
-
-    public Flower(FlowerColor color, int price) {
-        this.color = color;
-        this.price = price;
-    }
 }
