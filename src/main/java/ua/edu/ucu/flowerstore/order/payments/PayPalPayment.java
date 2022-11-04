@@ -2,7 +2,7 @@ package ua.edu.ucu.flowerstore.order.payments;
 
 import lombok.ToString;
 
-import java.util.List;
+import java.util.Map;
 
 @ToString
 public class PayPalPayment implements Payment {
@@ -12,7 +12,7 @@ public class PayPalPayment implements Payment {
     }
 
     @Override
-    public List<String> getDetails() {
-        return List.of("Successfully payed using PayPal!");
+    public Map<String, String> getDetails() {
+        return Map.of("PaymentType", "PayPal");
     }
 }

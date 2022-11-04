@@ -1,8 +1,8 @@
 package ua.edu.ucu.flowerstore.order.payments;
 
-import java.util.List;
+import java.util.Map;
 
 public interface Payment {
     boolean pay();
-    List<String> getDetails();
+    Map<String, String> getDetails();
 }

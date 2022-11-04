@@ -2,7 +2,7 @@ package ua.edu.ucu.flowerstore.order.payments;
 
 import lombok.ToString;
 
-import java.util.List;
+import java.util.Map;
 
 @ToString
 public class CreditCardPayment implements Payment {
@@ -11,7 +11,7 @@ public class CreditCardPayment implements Payment {
         return true;
     }
     @Override
-    public List<String> getDetails() {
-        return List.of("Successfully payed using CreditCard!");
+    public Map<String, String> getDetails() {
+        return Map.of("PaymentType", "CreditCard");
     }
 }
