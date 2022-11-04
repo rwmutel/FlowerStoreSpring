@@ -2,19 +2,20 @@ package ua.edu.ucu.flowerstore.order;
 
 import ua.edu.ucu.flowerstore.items.FlowerPack;
 import ua.edu.ucu.flowerstore.items.Item;
+import ua.edu.ucu.flowerstore.items.payments.Payment;
 
 import java.util.LinkedList;
 import java.util.List;
 
 public class Order {
-    private List<Item> items = new LinkedList<Item>();
-//    private Payment payment;
+    private final List<Item> items = new LinkedList<Item>();
+    private Payment payment;
 //    private Delivery delivery;
-//
-//    public void setPayment(Payment payment) {
-//        this.payment = payment;
-//    }
-//
+
+    public void setPayment(Payment payment) {
+        this.payment = payment;
+    }
+
 //    public void setDelivery(Delivery delivery) {
 //        this.delivery = delivery;
 //    }
