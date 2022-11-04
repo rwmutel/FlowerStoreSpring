@@ -1,4 +1,4 @@
-package ua.edu.ucu.flowerstore;
+package ua.edu.ucu.flowerstore.items;
 
 public enum FlowerColor {
     RED("#FF0000"), BLUE("#0000FF"), WHITE("#FFFFFF");

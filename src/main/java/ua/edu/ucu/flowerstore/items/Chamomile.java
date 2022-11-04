@@ -1,5 +1,6 @@
-package ua.edu.ucu.flowerstore;
+package ua.edu.ucu.flowerstore.items;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
@@ -11,5 +12,6 @@ public class Chamomile extends Flower {
     }
     public Chamomile() {
         super();
+        this.description="Beautiful white flower with yellow center";
     }
 }
