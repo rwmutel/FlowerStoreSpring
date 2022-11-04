@@ -1,8 +1,7 @@
 package ua.edu.ucu.flowerstore.order;
 
-import ua.edu.ucu.flowerstore.items.FlowerPack;
 import ua.edu.ucu.flowerstore.items.Item;
-import ua.edu.ucu.flowerstore.items.payments.Payment;
+import ua.edu.ucu.flowerstore.order.payments.Payment;
 
 import java.util.LinkedList;
 import java.util.List;

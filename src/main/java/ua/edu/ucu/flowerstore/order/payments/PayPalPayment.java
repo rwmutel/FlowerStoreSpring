@@ -1,4 +1,4 @@
-package ua.edu.ucu.flowerstore.items.payments;
+package ua.edu.ucu.flowerstore.order.payments;
 
 public class PayPalPayment implements Payment {
     @Override
