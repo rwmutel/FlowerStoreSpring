@@ -5,10 +5,14 @@ import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
 
-@Getter @Setter @AllArgsConstructor @ToString
+@Getter @Setter @ToString
 public class Flower extends Item{
     private FlowerColor color;
-    private double price;
     private double sepalLength;
     public Flower() {}
+    public Flower(FlowerColor color, double price, double sepalLength) {
+        this.color = color;
+        this.price = price;
+        this.sepalLength = sepalLength;
+    }
 }

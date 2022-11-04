@@ -7,7 +7,6 @@ import lombok.ToString;
 public class FlowerPack extends Item {
     private Flower flower;
     private int quantity;
-    private double price = 0;
     public FlowerPack(Flower flower, int quantity) {
         price = flower.getPrice() * quantity;
         this.description="Couple flowers of same type";
