@@ -1,15 +1,27 @@
 package ua.edu.ucu.flowerstore.items;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.Setter;
-import lombok.ToString;
+import lombok.*;
 
-@Getter @Setter @ToString
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Getter
+@Setter
+@ToString
+@AllArgsConstructor
+@NoArgsConstructor
+@Table
+@Entity
 public class Flower extends Item{
+    @Id
+    @GeneratedValue
+    private int id;
     private FlowerColor color;
+    private double price;
     private double sepalLength;
-    public Flower() {}
+
     public Flower(FlowerColor color, double price, double sepalLength) {
         this.color = color;
         this.price = price;
