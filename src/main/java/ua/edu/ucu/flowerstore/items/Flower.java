@@ -21,11 +21,11 @@ public class Flower extends Item{
     private FlowerColor color;
     private double price;
     private double sepalLength;
+    protected String description = "Simple, yet gorgeous flower.";
 
     public Flower(FlowerColor color, double price, double sepalLength) {
         this.color = color;
         this.price = price;
         this.sepalLength = sepalLength;
-        this.description = "Simple, yet gorgeous flower.";
     }
 }
