@@ -1,7 +1,9 @@
 package ua.edu.ucu.flowerstore.items;
 
 public enum FlowerColor {
-    RED("#FF0000"), BLUE("#0000FF"), WHITE("#FFFFFF");
+    RED("#FF0000"),
+    BLUE("#0000FF"),
+    WHITE("#FFFFFF");
     private final String stringRepresentation;
     FlowerColor(String stringRepresentation) {
         this.stringRepresentation = stringRepresentation;
