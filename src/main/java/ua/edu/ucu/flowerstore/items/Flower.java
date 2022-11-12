@@ -26,5 +26,6 @@ public class Flower extends Item{
         this.color = color;
         this.price = price;
         this.sepalLength = sepalLength;
+        this.description = "Simple, yet gorgeous flower.";
     }
 }

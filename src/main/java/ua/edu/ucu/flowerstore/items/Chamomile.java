@@ -12,6 +12,6 @@ public class Chamomile extends Flower {
     }
     public Chamomile() {
         super();
-        this.description="Beautiful white flower with yellow center";
+        this.description="Beautiful white flower with yellow center. ";
     }
 }
