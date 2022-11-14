@@ -1,6 +1,7 @@
 package ua.edu.ucu.flowerstore.appuser;
 
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.springframework.data.annotation.Transient;
 
@@ -15,10 +16,12 @@ import java.time.Period;
 @Table
 @Getter
 @Setter
+@NoArgsConstructor
 public class AppUser {
     @Id
     @GeneratedValue
     private int id;
+    private String name;
     private String email;
     private LocalDate dob;
     @Transient
@@ -26,5 +29,11 @@ public class AppUser {
 
     public int getAge() {
         return Period.between(dob, LocalDate.now()).getYears();
+    }
+
+    public AppUser(String name, String email, LocalDate dob) {
+        this.name = name;
+        this.email = email;
+        this.dob = dob;
     }
 }
