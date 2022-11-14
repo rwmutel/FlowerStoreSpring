@@ -14,7 +14,7 @@ import javax.persistence.Table;
 @NoArgsConstructor
 @Table
 @Entity
-public class Flower extends Item{
+public class Flower extends Item {
     @Id
     @GeneratedValue
     private int id;
