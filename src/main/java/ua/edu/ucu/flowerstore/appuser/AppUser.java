@@ -5,10 +5,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.springframework.data.annotation.Transient;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.time.LocalDate;
 import java.time.Period;
 
@@ -21,7 +18,9 @@ public class AppUser {
     @Id
     @GeneratedValue
     private int id;
+    @Column(unique = true)
     private String name;
+    @Column(unique = true)
     private String email;
     private LocalDate dob;
     @Transient
