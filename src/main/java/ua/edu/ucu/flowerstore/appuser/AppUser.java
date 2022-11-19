@@ -25,6 +25,7 @@ public class AppUser {
     private LocalDate dob;
     @Transient
     private int age;
+    private Status status = Status.idle;
 
     public int getAge() {
         return Period.between(dob, LocalDate.now()).getYears();
@@ -34,5 +35,8 @@ public class AppUser {
         this.name = name;
         this.email = email;
         this.dob = dob;
+    }
+    public void updateStatus(Status status) {
+        this.status = status;
     }
 }
